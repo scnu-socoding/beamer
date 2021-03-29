@@ -1,0 +1,69 @@
+\documentclass[10pt,aspectratio=43,serif]{beamer}		
+%\documentclass[handout,t]{beamer}
+
+\batchmode
+% \usepackage{pgfpages}
+% \pgfpagesuselayout{4 on 1}[letterpaper,landscape,border shrink=5mm]
+
+\usepackage{amsmath,amssymb,enumerate,epsfig,bbm,calc,color,ifthen,capt-of,multimedia,hyperref,ctex,listings}
+
+\usetheme{Berlin}
+
+\setbeamertemplate{headline}
+{%
+  \begin{beamercolorbox}[colsep=1.5pt]{upper separation line head}
+  \end{beamercolorbox}
+  \begin{beamercolorbox}{section in head/foot}
+    \vskip2pt\insertnavigation{\paperwidth}\vskip2pt
+  \end{beamercolorbox}%
+  \begin{beamercolorbox}[colsep=1.5pt]{lower separation line head}
+  \end{beamercolorbox}
+}
+
+\setbeamertemplate{footline}[frame number]{}
+
+%\setbeamertemplate{navigation symbols}{}
+
+\setbeamertemplate{footline}{}
+
+\catcode`\。=\active
+\newcommand{。}{．}
+
+\title{标题}
+\subtitle{副标题}
+\author{作者}
+\institute{South China Normal University}
+\date{\today}
+
+\AtBeginSection[]
+{
+  \begin{frame}<beamer>
+    \frametitle{目录}
+    \tableofcontents[currentsection]
+  \end{frame}
+}
+\beamerdefaultoverlayspecification{<+->}
+
+\begin{document}
+% -----------------------------------------------------------------------------
+
+\frame{\titlepage}
+
+%\section[目录]{}
+\begin{frame}{目录}
+  \tableofcontents
+\end{frame}
+
+% -----------------------------------------------------------------------------
+
+\section{test}
+\begin{frame}{测试}
+\begin{itemize}
+  \item 测试.
+  \item $a_i$.
+\end{itemize}
+\end{frame}
+
+% -----------------------------------------------------------------------------
+
+\end{document}
